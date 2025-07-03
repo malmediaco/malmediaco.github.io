@@ -1,1 +1,0 @@
-# malmediaco.github.io
