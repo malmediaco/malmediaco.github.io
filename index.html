@@ -1,158 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malice Media Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --crimson: #a30000;
-      --silver: #c0c0c0;
-      --black: #0d0d0d;
-      --white: #ffffff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--black);
-      color: var(--white);
-      overflow: hidden;
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-    }
-
-    /* 🔳 MOTION BACKGROUND */
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 200%;
-      background: url('cyber-technology-modern-background-photo.jpg') repeat;
-      background-size: cover;
-      animation: backgroundScroll 60s linear infinite;
-      z-index: -2;
-      opacity: 0.4;
-    }
-
-    @keyframes backgroundScroll {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-25%, -25%); }
-    }
-
-    /* 🔤 CONTENT */
-    .content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: var(--crimson);
-      animation: glitchBurst 6s infinite 3s;
-      position: relative;
-    }
-
-    h1::before,
-    h1::after {
-      content: "Malice Media Co.";
-      position: absolute;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      color: var(--white);
-      opacity: 0;
-    }
-
-    h1::before {
-      top: -2px;
-      animation: glitchBefore 6s infinite 3s;
-    }
-
-    h1::after {
-      top: 2px;
-      animation: glitchAfter 6s infinite 3s;
-    }
-
-    @keyframes glitchBurst {
-      0%, 95%, 100% { transform: none; }
-      10% { transform: translateX(-2px) skewX(-5deg); }
-      20% { transform: translateX(2px) skewX(5deg); }
-      30% { transform: translateX(-1px) skewX(-3deg); }
-      40% { transform: translateX(1px) skewX(3deg); }
-      50% { transform: none; }
-    }
-
-    @keyframes glitchBefore {
-      0%, 95%, 100% { opacity: 0; clip-path: inset(0 0 100% 0); }
-      10% { opacity: 1; clip-path: inset(0 0 20% 0); transform: translateX(-2px); }
-      30% { opacity: 1; clip-path: inset(60% 0 0 0); transform: translateX(2px); }
-      50% { opacity: 0; }
-    }
-
-    @keyframes glitchAfter {
-      0%, 95%, 100% { opacity: 0; clip-path: inset(100% 0 0 0); }
-      15% { opacity: 1; clip-path: inset(80% 0 0 0); transform: translateX(2px); }
-      35% { opacity: 1; clip-path: inset(0 0 40% 0); transform: translateX(-2px); }
-      55% { opacity: 0; }
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: var(--silver);
-      margin-bottom: 2rem;
-    }
-
-    .cta-button {
-      background-color: var(--crimson);
-      color: var(--white);
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #7a0000;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--silver);
-      z-index: 1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Malice Media Landing Page</title>
 </head>
 <body>
-  <div class="background"></div>
-
-  <div class="content">
-    <h1>Malice Media Co.</h1>
-    <p>AI-powered short-form content, delivered in 24 hours.</p>
-    <button class="cta-button" onclick="alert('Coming soon!')">Get Started</button>
-  </div>
-
-  <footer>
-    &copy; 2025 Malice Media Co. All rights reserved.
-  </footer>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">logo.png</h2>
+            <div class="toggle"></div>
+        </header>
+    </section>
 </body>
 </html>
