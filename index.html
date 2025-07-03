@@ -9,9 +9,45 @@
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo">logo.png</h2>
+            <h2 class="logo"><img src="logo.png"></h2>
             <div class="toggle"></div>
         </header>
+
+        <video src="cyberbackground.mp4" muted loop autoplay></video>
+
+        <div class="text">
+            <h2 class="glitch" data-text="Malice Media Co.">Malice Media Co.</h2>
+            <h3>Fierce Imagination</h3>
+            <h4>Ignite Your Inspiration</h4>
+            <p>Specializing in Assisted Intelligence-powered short-form content, delivered in 24 hours.</p>
+            <a href="#">Get Started! ></a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="tiktok.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        </ul>
     </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Request Form</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
